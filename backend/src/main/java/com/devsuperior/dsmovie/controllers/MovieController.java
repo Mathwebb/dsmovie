@@ -27,4 +27,9 @@ public class MovieController {
 	public MovieDTO findById(@PathVariable Long id){
 		return service.findById(id);
 	}
+	
+	@GetMapping(value = "/form/{id}")
+	public void cadastrarAvaliacao(@PathVariable Long id, String email, Double score) {
+		
+	}
 }
